@@ -33,8 +33,9 @@ class PeopleTableViewController: UIViewController {
     }
     
     private func bind() {
-        
-        
+        viewModel.peopleList.drive(tableView.rx.items(cellIdentifier: "PeopleTableViewCell", cellType: PeopleTableViewCell.self)) { index, model, cell in
+            cell.configure(model: model)
+        }.disposed(by: disposeBag)
     }
 
 }

@@ -13,7 +13,10 @@ class PeopleTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+    }
+    
+    func configure(model: People) {
+        self.nomeLbl.text = model.name
     }
     
 }
