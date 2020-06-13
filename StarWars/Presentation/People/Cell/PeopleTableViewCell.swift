@@ -9,7 +9,6 @@
 import UIKit
 
 class PeopleTableViewCell: UITableViewCell {
-    
     @IBOutlet weak var nomeLbl: UILabel!
     
     override func awakeFromNib() {

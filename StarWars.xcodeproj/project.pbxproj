@@ -18,6 +18,12 @@
 		858A9F862492DEB20020BF8B /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858A9F842492DEB20020BF8B /* PeopleTableViewCell.swift */; };
 		858A9F872492DEB20020BF8B /* PeopleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 858A9F852492DEB20020BF8B /* PeopleTableViewCell.xib */; };
 		858A9F8C24945C050020BF8B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 858A9F8B24945C050020BF8B /* GoogleService-Info.plist */; };
+		858A9F8F249460090020BF8B /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858A9F8E249460090020BF8B /* UIStoryboard.swift */; };
+		858A9F922494609C0020BF8B /* Storyboars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858A9F912494609C0020BF8B /* Storyboars.swift */; };
+		858A9F962495469E0020BF8B /* PeopleDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858A9F952495469E0020BF8B /* PeopleDIContainer.swift */; };
+		858A9F98249548810020BF8B /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858A9F97249548810020BF8B /* People.swift */; };
+		858A9F9A249549DF0020BF8B /* PeopleTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858A9F99249549DF0020BF8B /* PeopleTableViewModel.swift */; };
+		858A9F9C24954B9D0020BF8B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858A9F9B24954B9D0020BF8B /* UIViewController.swift */; };
 		B4121AF0BA60BAE2FD31B098 /* Pods_StarWars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1188F215C8A3D49E4763987 /* Pods_StarWars.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +43,12 @@
 		858A9F842492DEB20020BF8B /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 		858A9F852492DEB20020BF8B /* PeopleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleTableViewCell.xib; sourceTree = "<group>"; };
 		858A9F8B24945C050020BF8B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		858A9F8E249460090020BF8B /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		858A9F912494609C0020BF8B /* Storyboars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboars.swift; sourceTree = "<group>"; };
+		858A9F952495469E0020BF8B /* PeopleDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDIContainer.swift; sourceTree = "<group>"; };
+		858A9F97249548810020BF8B /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		858A9F99249549DF0020BF8B /* PeopleTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewModel.swift; sourceTree = "<group>"; };
+		858A9F9B24954B9D0020BF8B /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		A1188F215C8A3D49E4763987 /* Pods_StarWars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarWars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -81,9 +93,12 @@
 		8569DE3D2491827F00E582E4 /* StarWars */ = {
 			isa = PBXGroup;
 			children = (
+				858A9F932495466F0020BF8B /* Application */,
+				858A9F90249460880020BF8B /* Utils */,
 				858A9F89249453A40020BF8B /* Presentation */,
 				858A9F88249453760020BF8B /* Resources */,
 				8569DE4C2491828000E582E4 /* Info.plist */,
+				858A9F97249548810020BF8B /* People.swift */,
 			);
 			path = StarWars;
 			sourceTree = "<group>";
@@ -93,6 +108,7 @@
 			children = (
 				858A9F7E2492D2C10020BF8B /* PeopleTableViewController.storyboard */,
 				858A9F7C2492D2970020BF8B /* PeopleTableViewController.swift */,
+				858A9F99249549DF0020BF8B /* PeopleTableViewModel.swift */,
 				858A9F8A2494543B0020BF8B /* Cell */,
 			);
 			path = People;
@@ -110,6 +126,7 @@
 		858A9F88249453760020BF8B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				858A9F8D24945FB50020BF8B /* Extensions */,
 				8569DE3E2491827F00E582E4 /* AppDelegate.swift */,
 				8569DE402491827F00E582E4 /* SceneDelegate.swift */,
 				8569DE472491828000E582E4 /* Assets.xcassets */,
@@ -135,6 +152,39 @@
 				858A9F842492DEB20020BF8B /* PeopleTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		858A9F8D24945FB50020BF8B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				858A9F8E249460090020BF8B /* UIStoryboard.swift */,
+				858A9F9B24954B9D0020BF8B /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		858A9F90249460880020BF8B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				858A9F912494609C0020BF8B /* Storyboars.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		858A9F932495466F0020BF8B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				858A9F942495467C0020BF8B /* Scenes */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		858A9F942495467C0020BF8B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				858A9F952495469E0020BF8B /* PeopleDIContainer.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		E414913CDDF15A7E29ADC29E /* Pods */ = {
@@ -264,11 +314,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				858A9F922494609C0020BF8B /* Storyboars.swift in Sources */,
+				858A9F8F249460090020BF8B /* UIStoryboard.swift in Sources */,
 				858A9F862492DEB20020BF8B /* PeopleTableViewCell.swift in Sources */,
+				858A9F9C24954B9D0020BF8B /* UIViewController.swift in Sources */,
 				8569DE432491827F00E582E4 /* LoginViewController.swift in Sources */,
+				858A9F9A249549DF0020BF8B /* PeopleTableViewModel.swift in Sources */,
+				858A9F98249548810020BF8B /* People.swift in Sources */,
 				8569DE3F2491827F00E582E4 /* AppDelegate.swift in Sources */,
 				8569DE412491827F00E582E4 /* SceneDelegate.swift in Sources */,
 				858A9F7D2492D2970020BF8B /* PeopleTableViewController.swift in Sources */,
+				858A9F962495469E0020BF8B /* PeopleDIContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,38 +7,39 @@
 //
 
 import UIKit
-import Foundation
+import RxSwift
+import RxCocoa
 
 class PeopleTableViewController: UIViewController {
-
     @IBOutlet weak var tableView: UITableView!
+    
+    private var _DIProtocol: PeopleDIContainerProtocol?
+    
+    var viewModel: PeopleTableViewModel!
+    var disposeBag = DisposeBag()
+    
+    public class func instantiate(viewModel:PeopleTableViewModel, DIProtocol:PeopleDIContainer) -> PeopleTableViewController {
+        let storyboard = UIStoryboard.instantiate(name: .peopleTable, bundle: nil)
+        let view = storyboard.instantiateViewController(withIdentifier: PeopleTableViewController.storyboardIdentifier) as! PeopleTableViewController
+        view.viewModel = viewModel
+        view._DIProtocol = DIProtocol
+        return view
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "PeopleTableViewCell")
+        tableView.register(UINib(nibName: "PeopleTableViewCell", bundle: nil), forCellReuseIdentifier: "PeopleTableViewCell")
+        bind()
     }
     
-
+    private func bind() {
+        
+        
+    }
 
 }
 
-extension PeopleTableViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: PeopleTableViewCell.self), for: indexPath) as? PeopleTableViewCell else{
-            return UITableViewCell()
-            
-        }
-        return cell
-    }
-    
-    
-}
 
 
 

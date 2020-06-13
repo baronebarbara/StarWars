@@ -31,6 +31,9 @@
             </tableViewCellContentView>
             <accessibility key="accessibilityConfiguration" identifier="PeopleTableViewCell"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nomeLbl" destination="Vck-TX-VXs" id="RgR-22-yLr"/>
+            </connections>
             <point key="canvasLocation" x="139" y="153"/>
         </tableViewCell>
     </objects>
