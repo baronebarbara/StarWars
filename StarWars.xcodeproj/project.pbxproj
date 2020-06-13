@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		858A9F7F2492D2C10020BF8B /* PeopleTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 858A9F7E2492D2C10020BF8B /* PeopleTableViewController.storyboard */; };
 		858A9F862492DEB20020BF8B /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858A9F842492DEB20020BF8B /* PeopleTableViewCell.swift */; };
 		858A9F872492DEB20020BF8B /* PeopleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 858A9F852492DEB20020BF8B /* PeopleTableViewCell.xib */; };
+		858A9F8C24945C050020BF8B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 858A9F8B24945C050020BF8B /* GoogleService-Info.plist */; };
 		B4121AF0BA60BAE2FD31B098 /* Pods_StarWars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1188F215C8A3D49E4763987 /* Pods_StarWars.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		858A9F7E2492D2C10020BF8B /* PeopleTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PeopleTableViewController.storyboard; sourceTree = "<group>"; };
 		858A9F842492DEB20020BF8B /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 		858A9F852492DEB20020BF8B /* PeopleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleTableViewCell.xib; sourceTree = "<group>"; };
+		858A9F8B24945C050020BF8B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A1188F215C8A3D49E4763987 /* Pods_StarWars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarWars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 				8569DE402491827F00E582E4 /* SceneDelegate.swift */,
 				8569DE472491828000E582E4 /* Assets.xcassets */,
 				8569DE492491828000E582E4 /* LaunchScreen.storyboard */,
+				858A9F8B24945C050020BF8B /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -140,7 +143,6 @@
 				1F017F8E237F0A6BE8600DBF /* Pods-StarWars.debug.xcconfig */,
 				05285655768B4CF682CA8FEE /* Pods-StarWars.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +211,7 @@
 				8569DE4B2491828000E582E4 /* LaunchScreen.storyboard in Resources */,
 				8569DE482491828000E582E4 /* Assets.xcassets in Resources */,
 				8569DE462491827F00E582E4 /* LoginViewController.storyboard in Resources */,
+				858A9F8C24945C050020BF8B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
